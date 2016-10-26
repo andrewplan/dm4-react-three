@@ -1,3 +1,16 @@
+export function getStocks() {
+		return stocks;
+}
+
+export function getStockById( id ) {
+		for ( let i = 0; i < stocks.length; i++ ) {
+				if ( stocks[ i ]._id === id ) {
+						return stocks[ i ];
+				}
+		}
+		return {};
+}
+
 const stocks = [
 	{
 		"_id": "578f90cd97a17afaf6ba5160",
